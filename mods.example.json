@@ -1,0 +1,27 @@
+{
+  "mods": [
+    "example-mods/welcome-text.js",
+    "example-mods/tick-duration.js",
+    "example-mods/change-constant.js",
+    "example-mods/cli-method.js",
+    "example-mods/cronjob.js",
+    "example-mods/driver-method.js",
+    "example-mods/http-endpoint.js",
+    "example-mods/notifications-mailer/notifications-mailer.js",
+    "example-mods/player-sandbox.js",
+    "example-mods/process-object.js",
+    "example-mods/room-history.js",
+    "example-mods/custom-objects/simple.js",
+    "example-mods/custom-objects/advanced.js",
+    "example-mods/custom-objects/intent.js",
+    "example-mods/custom-objects/intent-custom.js",
+    "example-mods/renderer/draw.js",
+    "example-mods/renderer/draw-parameterized.js",
+    "example-mods/renderer/sprite.js",
+    "example-mods/renderer/sprite-animated.js",
+    "example-mods/renderer/sprite-parameterized.js"
+  ],
+  "bots": {
+    "simplebot": "node_modules/@screeps/simplebot/src"
+  }
+}
