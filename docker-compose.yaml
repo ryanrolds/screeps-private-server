@@ -1,0 +1,21 @@
+version: "3"
+services:
+  pserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mongodb
+      - redis
+    ports:
+      - 21025:21025
+      - 21026:21026
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379

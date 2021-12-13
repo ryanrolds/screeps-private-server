@@ -1,6 +1,10 @@
 {
-  "name": "my-screeps-world",
+  "name": "screeps-private-server",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "screeps": "^4.2.14",
+    "screepsmod-auth": "^2.6.2",
+    "screepsmod-mongo": "^2.10.3"
+  }
 }

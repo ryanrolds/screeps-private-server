@@ -1,0 +1,11 @@
+node_modules
+storage.sock
+logs/
+k8s
+Dockerfile
+README.md
+.dockerignore
+.git
+.gitignore
+example-mods
+mods.example.json

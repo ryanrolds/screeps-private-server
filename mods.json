@@ -1,5 +1,8 @@
 {
-  "mods": [],
+  "mods": [
+    "node_modules/screepsmod-auth/index.js",
+    "node_modules/screepsmod-mongo/index.js"
+  ],
   "bots": {
     "simplebot": "node_modules/@screeps/simplebot/src",
     "overmind": "./bots/overmind"
