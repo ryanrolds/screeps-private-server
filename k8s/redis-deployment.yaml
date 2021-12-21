@@ -2,23 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: pserver
-  name: pserver
+    app: pserver-redis
+  name: pserver-redis
   namespace: screeps
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pserver
+      app: pserver-redis
   template:
     metadata:
       labels:
-        app: pserver
+        app: pserver-redis
     spec:
       containers:
-      - name: pserver
-        image: ${DOCKER_REPO}/screeps-pserver:${TAG_NAME}
+      - name: pserver-redis
+        image: redis:6.0-alpine
         imagePullPolicy: ""
-      imagePullSecrets:
-        - name: regcred
-status: {}

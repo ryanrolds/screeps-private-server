@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  labels:
+    app: pserver-mongo
+  name: pserver-mongo
+  namespace: screeps
+spec:
+  selector:
+    matchLabels:
+      app: pserver-mongo
+  serviceName: "pserver-mongo"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pserver-mongo
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+      - name: pserver-mongo
+        image: mongo:4
+        envFrom:
+        - secretRef:
+            name: mongo-creds
+        volumeMounts:
+        - name: data
+          mountPath: /data/db
+  volumeClaimTemplates:
+  - metadata:
+      name: data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "openebs-sc-mongo"
+      resources:
+        requests:
+          storage: 20Gi

@@ -62,3 +62,10 @@ data:
     ;Automatically restart child processes.
     restart_interval = 3600
 
+    [mongo]
+    uri = mongodb://pserver-mongo.screeps.svc.cluster.local:27017/screeps
+
+    [redis]
+    host = pserver-redis.screeps.svc.cluster.local
+    port = 6379
+

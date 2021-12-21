@@ -44,7 +44,7 @@ assetdir = assets
 db = db.json
 
 ;If set, forward console messages to terminal
-log_console = false
+log_console = true
 
 ;How many log files to keep when rotating.
 log_rotate_keep = 5

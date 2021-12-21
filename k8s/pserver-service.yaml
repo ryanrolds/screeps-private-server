@@ -13,3 +13,4 @@ spec:
     targetPort: 21026
   selector:
     app: pserver
+  type: LoadBalancer
