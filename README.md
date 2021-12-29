@@ -3,14 +3,14 @@
 ## Setup
 
 1. Fill out the the Steam API key in `.screepsrc`
-2. `docker-compose up -d`
-3. Wait a while for the server to start
-4. Import the map into MongoDB
+2. `docker-compose build pserver`
+3. `docker-compose up -d`
+4. Wait a while for the server to start
+5. Import the map into MongoDB
   * `docker-compose exec pserver npx screeps cli`
   * `system.resetAllData()`
-  * `system.setTickDuration(500)`
-5. Access server from Screeps client and create account
-6. Setup API authentication if you want to use Grunt
+6. Access server from Screeps client and create an account
+7. Using the CLI tool, setup API authentication if you want to use Grunt
   * `setPassword('Username', 'YourDesiredPassword')`
 
 ## Adding bots via CLI

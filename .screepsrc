@@ -56,7 +56,7 @@ storage_disabled = false
 restart_interval = 3600
 
 [mongo]
-uri = mongodb://mongodb:27017/screeps
+uri = mongodb://screeps:password@mongodb:27017/screeps
 
 [redis]
 host = redis
