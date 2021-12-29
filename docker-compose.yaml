@@ -10,13 +10,19 @@ services:
     ports:
       - 21025:21025
       - 21026:21026
+    restart: always
 
   mongodb:
     image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
     ports:
       - 27017:27017
     volumes:
       - /data/db
+      - ./scripts/mongo/setup.js:/docker-entrypoint-initdb.d/setup.js
+
   redis:
     image: redis:latest
     ports:
