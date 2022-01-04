@@ -9,9 +9,14 @@
 5. Import the map into MongoDB
   * `docker-compose exec pserver npx screeps cli`
   * `system.resetAllData()`
-6. Access server from Screeps client and create an account
-7. Using the CLI tool, setup API authentication if you want to use Grunt
+6. Restart the server with `docker-compose restart pserver`
+7. Access server from Screeps client and create an account
+8. Using the CLI tool, setup API authentication if you want to use Grunt
+  * `docker-compose exec pserver npx screeps cli`
   * `setPassword('Username', 'YourDesiredPassword')`
+9. Set tickrate to `500ms`
+  * `docker-compose exec pserver npx screeps cli`
+  * `system.setTickDuration(500)`
 
 ## Adding bots via CLI
 
