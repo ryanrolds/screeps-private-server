@@ -17,6 +17,9 @@
 9. Set tickrate to `500ms`
   * `docker-compose exec pserver npx screeps cli`
   * `system.setTickDuration(500)`
+10. Increase allow CPU
+  * `docker-compose exec pserver npx screeps cli`
+  * `storage.db['users'].update({}, {$set: {cpu: 300}})`
 
 ## Adding bots via CLI
 
