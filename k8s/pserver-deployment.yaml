@@ -19,6 +19,14 @@ spec:
       - name: pserver
         image: ${DOCKER_REPO}/screeps-pserver:${TAG_NAME}
         imagePullPolicy: ""
+        volumeMounts:
+        - name: screepsrc
+          mountPath: /pserver/.screepsrc
+          subPath: .screepsrc
       imagePullSecrets:
         - name: regcred
+      volumes:
+        - name: screepsrc
+          configMap:
+            name: pserver-config
 status: {}

@@ -1,16 +1,11 @@
 # Screeps Private Server K8s
 
-
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-
-
 #### Datastores:
 ```
 kubectl create secret generic mongo-creds --namespace screeps \
   --from-literal=MONGO_INITDB_DATABASE=screeps \
   --from-literal=MONGO_INITDB_ROOT_USERNAME=screeps \
-  --from-literal=MONGO_INITDB_ROOT_PASSWORD=... 
+  --from-literal=MONGO_INITDB_ROOT_PASSWORD=password 
 
 kubectl apply -f k8s/mongo-data.yaml
 kubectl apply -f k8s/mongo-statefulset.yaml
@@ -47,7 +42,6 @@ docker push $DOCKER_REPO/screeps-pserver:$TAG_NAME
 ```
 envsubst < k8s/pserver-deployment.yaml | kubectl apply --namespace screeps -f - 
 ```
-
 
 ## Interacting with the Private Server
 
