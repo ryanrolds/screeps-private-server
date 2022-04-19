@@ -61,3 +61,8 @@ uri = mongodb://screeps:password@mongodb:27017/screeps
 [redis]
 host = redis
 port = 6379
+
+[history]
+historyChunkSize = 100
+mode = 'file'
+path = 'history'
