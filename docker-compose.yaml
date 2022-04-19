@@ -11,6 +11,8 @@ services:
       - 21025:21025
       - 21026:21026
     restart: always
+    volumes:
+      - /pserver/history
 
   mongodb:
     image: mongo:latest

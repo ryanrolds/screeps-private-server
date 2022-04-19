@@ -17,9 +17,16 @@
 9. Set tickrate to `500ms`
   * `docker-compose exec pserver npx screeps cli`
   * `system.setTickDuration(500)`
-10. Increase allow CPU
+10. Increase allow CPU (must be done after adding bots/self)
   * `docker-compose exec pserver npx screeps cli`
-  * `storage.db['users'].update({}, {$set: {cpu: 300}})`
+  * `storage.db['users'].update({}, {$set: {cpu: 500}})`
+11. Add terminals
+  * `docker-compose exec pserver npx screeps cli`
+  * `storage.db['rooms.objects'].insert({ type: 'terminal', room: 'W0N0', x: 0, y:0 })`
+  * `storage.db['rooms.objects'].insert({ type: 'terminal', room: 'W10N0', x: 0, y:0 })`
+  * `storage.db['rooms.objects'].insert({ type: 'terminal', room: 'W10N10', x: 0, y:0 })`
+  * `storage.db['rooms.objects'].insert({ type: 'terminal', room: 'W0N10', x: 0, y:0 })`
+  * `storage.db['market.orders'].clear()`
 
 ## Adding bots via CLI
 
@@ -27,7 +34,9 @@
 
 ```
 docker-compose exec pserver npx screeps cli
-bots.spawn("overmind", "W1N8", {x: 21, y: 16})
+bots.spawn("overmind", "W1N4", {x: 11, y: 17})
+bots.spawn("tooangel", "W6N9", {x: 35, y: 22})
+bots.spawn("tooangel", "W4N1", {x: 24, y: 21})
 ```
 
 ## Docker & K8s
