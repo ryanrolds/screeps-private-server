@@ -13,6 +13,7 @@ services:
     restart: always
     volumes:
       - /pserver/history
+      - ./.screepsrc:/pserver/.screepsrc
 
   mongodb:
     image: mongo:latest

@@ -27,7 +27,7 @@
 12. Add bots
   * `bots.spawn("overmind", "W1N4", {x: 11, y: 17})`
   * `bots.spawn("tooangel", "W6N9", {x: 35, y: 22})`
-  * `bots.spawn("tooangel", "W4N1", {x: 24, y: 21})`
+  * `bots.spawn("tooangel", "W4N1", {x: 41, y: 11})`
 13. Increase allow CPU (must be done after adding bots/self)
   * `storage.db['users'].update({}, {$set: {cpu: 500}})`
 14. Resume simulation
