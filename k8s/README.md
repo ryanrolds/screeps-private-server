@@ -45,3 +45,5 @@ envsubst < k8s/pserver-deployment.yaml | kubectl apply --namespace screeps -f -
 
 ## Interacting with the Private Server
 
+kubectl --namespace screeps exec -it pserver-6956c46ff4-5nnjz -- /bin/sh 
+npx screeps cli
