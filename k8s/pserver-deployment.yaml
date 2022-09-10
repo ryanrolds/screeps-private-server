@@ -29,4 +29,3 @@ spec:
         - name: screepsrc
           configMap:
             name: pserver-config
-status: {}
