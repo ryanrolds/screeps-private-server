@@ -1,13 +1,11 @@
 {
   "mods": [
-    "node_modules/screepsmod-auth/index.js",
-    "node_modules/screepsmod-mongo/index.js",
     "node_modules/screepsmod-market/index.js",
     "node_modules/screepsmod-history/index.js"
   ],
   "bots": {
     "simplebot": "node_modules/@screeps/simplebot/src",
-    "overmind": "./bots/overmind",
+    "overmind": "node_modules/screeps-bot-overmind/src",
     "tooangel": "node_modules/screeps-bot-tooangel/src"
   }
 }
