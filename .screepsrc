@@ -55,13 +55,6 @@ storage_disabled = false
 ;Automatically restart child processes.
 restart_interval = 3600
 
-[mongo]
-uri = mongodb://screeps:password@mongodb:27017/screeps
-
-[redis]
-host = redis
-port = 6379
-
 [history]
 historyChunkSize = 100
 mode = 'file'

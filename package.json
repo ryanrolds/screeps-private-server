@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@screeps/simplebot": "^1.0.1",
     "screeps": "^4.2.14",
+    "screeps-bot-overmind": "^1.0.0",
     "screeps-bot-tooangel": "^1.4.3",
     "screepsmod-auth": "^2.6.2",
+    "screepsmod-bots": "0.0.4",
     "screepsmod-history": "^1.6.0",
     "screepsmod-market": "^1.2.0",
     "screepsmod-mongo": "^2.10.3"

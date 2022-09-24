@@ -1,3 +1,5 @@
 /logs
 /.screepsrc
 /node_modules
+/history.db
+/db.json
