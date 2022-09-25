@@ -5,18 +5,22 @@ bots:
   position: 22,13,W1N8
   cpu: 200
   gcl: 1
+  log_console: false
 - username: bot2
   botName: tooangel
   position: 34,22,W3N1
   cpu: 200
   gcl: 1
+  log_console: false
 - username: bot3
-  botName: overmind
+  botName: choreographer
   position: 17,12,W8N3
   cpu: 200
   gcl: 1
+  log_console: true
 - username: bot4
   botName: tooangel
   position: 17,37,W9N9
   cpu: 200
   gcl: 1
+  log_console: false
