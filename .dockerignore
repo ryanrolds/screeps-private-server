@@ -1,6 +1,7 @@
 node_modules
 storage.sock
 logs/
+history/
 k8s
 Dockerfile
 README.md
@@ -9,4 +10,3 @@ README.md
 .gitignore
 example-mods
 mods.example.json
-.screepsrc

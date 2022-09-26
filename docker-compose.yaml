@@ -11,4 +11,3 @@ services:
     volumes:
       - /pserver/history
       - ./.screepsrc:/pserver/.screepsrc
-      - ./mods/screepsmod-bots:/pserver/mods/screepsmod-bots
